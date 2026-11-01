@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assests/logo-removebg-preview.png">
+    <title>CUG</title>
+</head>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="logo">
+            <img src="assests/cug_logo_new-removebg-preview.png" alt="CUG">
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="options" id="primary-navigation">
+            <a href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">PROGRAMES</a>
+            <a href="">STUDENTS</a>
+            <a href="">ADMISSION</a>
+        </div>
+    </nav>
+
+   <body>
+
+<section class="hero">
+
+
+    <div class="hero-content">
+        <h1>Welcome to CATHOLIC UNIVERSITY OF GHANA(CUG)</h1>
+        <p>Explore our programs and opportunities for students.</p>
+       
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+        
+</body>
+ <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const navigation = document.querySelector(".site-nav");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navigation.classList.toggle("menu-open");
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+        });
+
+        navigation.querySelectorAll(".options a").forEach((link) => {
+            link.addEventListener("click", () => {
+                navigation.classList.remove("menu-open");
+                menuToggle.setAttribute("aria-expanded", "false");
+                menuToggle.setAttribute("aria-label", "Open navigation menu");
+            });
+        });
+    </script>
+</html>
