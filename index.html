@@ -22,7 +22,17 @@
             <a href="">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="">PROGRAMES</a>
-            <a href="">STUDENTS</a>
+
+            <div class="students-menu">
+                <button class="stu" type="button" aria-expanded="false" aria-haspopup="true">
+                    STUDENTS↓
+                </button>
+                <ul class="dropdown">
+                    <li class="drop">STUDENT LIFE</li>
+                    <li class="drop">CAMPUS LIFE</li>
+                    <li class="drop">HOSTEL</li>
+                </ul>
+            </div>
             <a href="#admission">ADMISSION</a>
         </div>
     </nav>
@@ -79,10 +89,12 @@
     <option value="Undergraduate">Undergraduate</option>
     <option value="Postgraduate">Postgraduate</option>
   </select>
+  <input type="text" placeholder="select A program" required>
    <input type="email" placeholder="YourEmail" required>
+   <label for="file">Upload your WASSCE:</label>
    <input type="file">
 
-   <button>SUBMITE</button>
+   <button class="submitbtn">SUBMITE</button>
    
    </div>
 </div>
@@ -103,6 +115,8 @@
  <script>
         const menuToggle = document.querySelector(".menu-toggle");
         const navigation = document.querySelector(".site-nav");
+        const studentsMenu = document.querySelector(".students-menu");
+        const studentsToggle = document.querySelector(".stu");
 
         menuToggle.addEventListener("click", () => {
             const isOpen = navigation.classList.toggle("menu-open");
@@ -113,9 +127,16 @@
             );
         });
 
+        studentsToggle.addEventListener("click", () => {
+            const isOpen = studentsMenu.classList.toggle("is-open");
+            studentsToggle.setAttribute("aria-expanded", isOpen);
+        });
+
         navigation.querySelectorAll(".options a").forEach((link) => {
             link.addEventListener("click", () => {
                 navigation.classList.remove("menu-open");
+                studentsMenu.classList.remove("is-open");
+                studentsToggle.setAttribute("aria-expanded", "false");
                 menuToggle.setAttribute("aria-expanded", "false");
                 menuToggle.setAttribute("aria-label", "Open navigation menu");
             });

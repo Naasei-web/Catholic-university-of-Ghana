@@ -21,9 +21,6 @@ nav{
     gap: 16px;
     padding: 10px 30px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 0;
 }
 .logo img{
     display: block;
@@ -35,6 +32,51 @@ nav{
     color: black;
     padding: 10px 8px;
     text-decoration: none;
+}
+.students-menu{
+    position: relative;
+}
+.options .stu{
+    color: black;
+    padding: 10px 8px;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+    font-size: 1rem;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #afad1b;
+    padding: 12px;
+    border-radius: 5px;
+    list-style-type: none;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.students-menu:hover .dropdown,
+.students-menu:focus-within .dropdown,
+.students-menu.is-open .dropdown{
+    display: flex;
+}
+.drop{
+    margin-bottom: 6px;
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+}
+.drop:hover{
+    overflow: hidden;
+    background-color: #024602;
+    color: #e2df17;
+    cursor: pointer;
 }
 .options{
     display: flex;
@@ -83,7 +125,15 @@ nav{
         width: 100%;
         text-align: center;
     }
-   
+    .students-menu{
+        width: 100%;
+        text-align: center;
+    }
+    .dropdown{
+        position: static;
+        width: 100%;
+        min-width: 0;
+    }
 }
 a:hover{
    background-color: #024602;
@@ -198,7 +248,7 @@ body{
     background-color:#e2df17;
     width: 500px;
     padding: 20px;
-    height: 400px;
+    height: 560px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -240,3 +290,19 @@ select{
 input:focus{
     outline: none;
 }
+.submitbtn{
+    width: 100%;
+    margin-top: 12px;
+    padding: 14px 20px;
+    border: 2px solid #024602;
+    border-radius: 6px;
+    background-color: #024602;
+    color: #e2df17;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.submitbtn:hover{
+    background-color: #afad1b;
+    color: #024602;}
