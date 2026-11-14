@@ -21,16 +21,16 @@
         <div class="options" >
             <a href="">HOME</a>
             <a href="#about">ABOUT</a>
-            <a href="">PROGRAMES</a>
+            <a href="#programs">PROGRAMES</a>
 
             <div class="students-menu">
                 <button class="stu" type="button" aria-expanded="false" aria-haspopup="true">
                     STUDENTS↓
                 </button>
                 <ul class="dropdown">
-                    <li class="drop">STUDENT LIFE</li>
-                    <li class="drop">CAMPUS LIFE</li>
-                    <li class="drop">HOSTEL</li>
+                    <li class="drop"><a href="#student-life">STUDENT LIFE</a></li>
+                    <li class="drop"><a href="#campus-life">CAMPUS LIFE</a></li>
+                    <li class="drop"><a href="#hostel">HOSTEL</a></li>
                 </ul>
             </div>
             <a href="#admission">ADMISSION</a>
@@ -50,7 +50,7 @@
 
 
 
-    <section class="about"  id="about">
+    <div class="about"  id="about">
 
 
         <div class="words">
@@ -69,12 +69,98 @@
         </div>
 
         <div class="pic">
-            <img src="assests/grrr.jpg"  class="graduationimg">
+            <img src="assests/about.jpeg"  class="graduationimg">
         </div>
 
-    </section>
+    </div>
 
-    <section class="form" id="admission">
+
+<div  class="programs" id="programs">
+<div class="headingforfaulties"><h1>Our Faculties</h1></div>
+
+
+<div class="faculties">
+<div class="card">
+    <img src="assests/1772104683_11zon.jpeg" alt="">
+    <h2>
+School of Nursing and Midwifery</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Department of nursing</li>
+        <li>Department of Midwifery</li>
+        <li>Department of Public Health</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+<div class="card">
+    <img src="assests/images (5)_11zon.jpeg" alt="">
+    <h2>Faculty of Economics and Business Administration</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Information Technology (IT)</li>
+        <li>Computer Science</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+<div class="card">
+    <img src="assests/1772103935_11zon.jpeg" alt="">
+    <h2>Faculty of Education</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Department of Art Education</li>
+        <li>Department of social science Education</li>
+        <li>Department of Mathematics and science Education</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+<div class="card">
+    <img src="assests/images (3)_11zon.jpeg" alt="">
+    <h2>Faculty of Religions and Social Sciences</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Department of Religious Studies</li>
+        <li>Department of Journalism</li>
+        <li>Department of Languages</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+
+<div class="card">
+    <img src="assests/overview.jpeg" alt="">
+    <h2>School of Public Health and Allied Sciences</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Department of public health</li>
+        <li>Department of Allied Health Sciences</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+<div class="card">
+    <img src="assests/images (6)_11zon.jpeg" alt="">
+    <h2>Computer Engineering and Mathematics Science(CEMS)</h2>
+    <h3>our programs</h3>
+    <ol>
+        <li>Information Technology (IT)</li>
+        <li>Computer Science</li>
+    </ol>
+    <button>Apply</button>
+</div>
+
+
+</div>
+
+
+</div>
+
+ 
+
+
+  <div class="form" id="admission">
 
 
   <div class="formsh2">
@@ -98,20 +184,45 @@
    
    </div>
 </div>
-    </section>
 
-
-</section>
-
+  </div>
 
 
 
 
 
+  </section>
 
 
-        
-</body>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <img class="footer-logo" src="assests/cug_logo_new-removebg-preview.png" alt="Catholic University of Ghana logo">
+            <h2>Catholic University of Ghana</h2>
+            <p>Learning, service, and leadership.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#admission">Admission</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Catholic University of Ghana. All rights reserved.</p>
+    </div>
+</footer>
  <script>
         const menuToggle = document.querySelector(".menu-toggle");
         const navigation = document.querySelector(".site-nav");
@@ -142,4 +253,5 @@
             });
         });
     </script>
+</body>
 </html>

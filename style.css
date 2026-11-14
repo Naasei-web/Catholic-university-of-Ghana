@@ -14,7 +14,7 @@ img{
 }
 nav{
     min-height: 80px;
-    background-color: #afad1b;
+    background-color: #f3ef06;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +51,7 @@ nav{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #afad1b;
+    background-color: #e6e218;
     padding: 12px;
     border-radius: 5px;
     list-style-type: none;
@@ -162,7 +162,7 @@ body{
     color: #e6e218;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(assests/enh.jpg);
+        url(assests/background.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -223,6 +223,7 @@ body{
     }
     .words{
         padding: 16px;
+        background-color: #024602;
     }
     .pic{
         width: 100%;
@@ -242,13 +243,13 @@ body{
     flex-direction: column;
     padding: 10px;
     width: 100%;
-    height: 100%;
+height: 100%;;
 }
 .forms{
     background-color:#e2df17;
     width: 500px;
     padding: 20px;
-    height: 560px;
+    height: auto;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -306,3 +307,157 @@ input:focus{
 .submitbtn:hover{
     background-color: #afad1b;
     color: #024602;}
+.programs{
+    width: 100%;
+     display: flex;
+     flex-direction: column;
+     background-color:#032203;
+}
+.headingforfaulties h1{
+    color: #afad1b;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    font-size: 36px;
+}
+.faculties{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+   
+}
+.faculties ol li{
+     list-style:inside;
+}
+.card{
+    display: flex;
+    width: 400px;
+    min-height: 400px;
+        text-align: center;
+    flex-direction: column;
+    border-radius: 9px;
+    padding: 5px;
+    background-color: #e2df17;
+    align-items: center;
+    cursor: pointer;
+}
+.card h2{
+    color: #032203;
+    padding: 5px;
+}
+.card h3{
+    color: #535208;
+    text-decoration: underline;
+    padding-bottom:3px ;
+}
+.card:hover{
+ background-color: #0c920c; 
+ padding: 25px;  
+}
+
+.card ul li{
+    color: #032203;
+
+}
+.card button{
+  
+        
+        background-color: #024602;
+        padding: 10px;
+        font-size: 17px;
+        border-radius: 5px;
+        margin-right: 20px;
+        color: #afad1b;
+        width: 70px;
+        cursor: pointer; 
+}
+.card button:hover{
+    padding: 15px;
+    background-color: #afad1b;
+    color: #024602;
+}
+
+.site-footer{
+    background-color: #021b02;
+    color: #f4f3d2;
+    padding: 42px 24px 16px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.footer-about h2,
+.footer-links h3,
+.footer-social h3{
+    color: #e2df17;
+    margin-bottom: 12px;
+}
+.footer-logo{
+    display: block;
+    width: 180px;
+    height: 72px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+.footer-about p{
+    line-height: 1.6;
+}
+.footer-links,
+.footer-social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+.site-footer a{
+    color: #f4f3d2;
+    text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible{
+    color: #e2df17;
+    text-decoration: underline;
+}
+.social-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.social-links a{
+    border: 1px solid #afad1b;
+    border-radius: 20px;
+    padding: 8px 12px;
+}
+.footer-bottom{
+    max-width: 1100px;
+    margin: 32px auto 0;
+    padding-top: 16px;
+    border-top: 1px solid rgba(226, 223, 23, 0.35);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px){
+    .footer-content{
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+    }
+    .footer-links,
+    .footer-social{
+        align-items: center;
+    }
+    .footer-logo{
+        margin: 0 auto 12px;
+    }
+    .social-links{
+        justify-content: center;
+    }
+}
