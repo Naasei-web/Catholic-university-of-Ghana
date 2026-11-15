@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .news{
+            background-color: #032203;
+            color: red;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+        }
+        .news-card{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 10px;
+            background-color: black;
+            min-height: 400px;
+            height: auto;
+            width: 100%;
+            min-width: 0;
+            color: rgb(238, 24, 24);
+            margin-bottom: 20px;
+            
+          
+        }
+        .news-card img{
+            width: 40%;
+            height: 350px;
+            object-fit: cover;
+        }
+        .worlds{
+            padding: 20px;
+            flex: 1;
+            min-width: 0;
+            text-align: center;
+            cursor: pointer;
+        }
+        .worlds h1{
+            font-size: 60px;
+            font-weight: bold;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+        .worlds p{
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 0px;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+
+        .news button{
+            margin-top: 8px;
+            padding: 14px 30px;
+            border: 2px solid #e2df17;
+            border-radius: 6px;
+            background-color: #e2df17;
+            color: #032203;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+        }
+        .news button:hover{
+            background-color: transparent;
+            color: #e2df17;
+            transform: translateY(-2px);
+        }
+        .news button:focus-visible{
+            outline: 3px solid white;
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 700px){
+            .news-card{
+                flex-direction: column;
+            }
+            .news-card img,
+            .worlds{
+                width: 100%;
+            }
+            .news-card img{
+                height: 280px;
+            }
+        }
+
+    </style>
+
+
+  <nav class="site-nav" aria-label="Main navigation">
+        <div class="logo">
+            <img src="assests/cug_logo_new-removebg-preview.png" alt="CUG">
+        </div>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="options" >
+            <a href="">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#programs">PROGRAMES</a>
+
+            <div class="students-menu">
+                <button class="stu" type="button" aria-expanded="false" aria-haspopup="true">
+                    STUDENTS↓
+                </button>
+                <ul class="dropdown">
+                    <li class="drop"><a href="student.html">STUDENT LIFE</a></li>
+                    <li class="drop"><a href="https://youtu.be/HwSL-BiqOJ8?si=e1w2fIYaAHX_MpBl">CAMPUS TOUR</a></li>
+                    <li class="drop"><a href="#hostel">HOSTEL</a></li>
+                    <li class="drop"><a href="login.html">Log in</a></li>
+                </ul>
+            </div>
+            <a href="#admission">ADMISSION</a>
+   
+        </div>
+    </nav>
+
+
+</head>
+<body>
+
+
+
+
+
+   <div class="news">
+
+<div class="news-card">
+ 
+   
+        <img src="assests/linkphotos/WhatsApp Image 2026-11-14 at 10.08.59 AM.jpeg" alt="CUG">
+  
+
+    <div class="worlds">
+      <a href="https://www.tiktok.com/@blaqghanaian/video/7697159951495613704"> <h1>Lasmide Suprise performace At CUG</h1></a> 
+        <p>Lasmid performed at the Catholic University of Ghana (CUG) in Sunyani on Friday, April 24, 2026, during the CUG SRC Week Artiste Night held at the campus quadrangle</p>
+    </div>
+
+</div>
+
+
+
+<div class="news-card">
+ 
+   
+        <img src="assests/linkphotos/tghth.jpeg" alt="CUG">
+
+    <div class="worlds">
+      <a href="https://youtu.be/Co-oL-8AoMU?si=lSX3MDumnilXwvJF"> <h1>Matriculation At CUG</h1></a> 
+        <p>freashers was accepted and the level 400 graduated from the university in Sunyani on Friday, october 24, 2026, during the Matriculation</p>
+
+</div>
+</div>
+
+
+<div class="news-card">
+ 
+   
+        <img src="assests/linkphotos/boll.jpeg" alt="CUG">
+  
+
+    <div class="worlds">
+      <a href="https://youtube.com/shorts/ePeGW_VFk4Y?si=y6rPxvaJoT85B8RL"> <h1>THE CHAMPIONS</h1></a> 
+        <p> Catholic University of Ghana (CUG) Soccer team won The Inter-Schools compititions that Was help in Sunyani,</p>
+    </div>
+
+</div>
+
+<a href="http://www.youtube.com/@CUGSRCOFFICIAL"><button>EXPLORE MORE</button></a>
+   </div> 
+    
+</body>
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <img class="footer-logo" src="assests/cug_logo_new-removebg-preview.png" alt="Catholic University of Ghana logo">
+            <h2>Catholic University of Ghana</h2>
+            <p>Learning, service, and leadership.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Explore</h3>
+            <a href="#about">About</a>
+            <a href="#programs">Programs</a>
+            <a href="#admission">Admission</a>
+        </div>
+
+        <div class="footer-social">
+            <h3>Follow us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Catholic University of Ghana. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

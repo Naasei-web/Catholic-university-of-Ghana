@@ -19,9 +19,27 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+    margin-top: 0px;
     padding: 10px 30px;
     width: 100%;
 }
+a{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+}
+button{
+    border: 0;
+    background: #032203;
+    color: #e2df17;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin:10px;
+    border:none;
+    cursor: pointer;
+    
+}       
 .logo img{
     display: block;
     width: 200px;
@@ -30,8 +48,9 @@ nav{
 }
 .options a{
     color: black;
-    padding: 10px 8px;
+    padding: 8px;
     text-decoration: none;
+    text-align: center;
 }
 .students-menu{
     position: relative;
